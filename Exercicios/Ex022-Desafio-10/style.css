@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;    
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'BebasNeue', cursive;
+    --fonte2: 'IDroid', sans-serif;
+}
+
+@font-face {
+    font-family: 'IDroid';
+    src: url('idroid.otf');
+    /*font-family: 'BebasNeue';
+    src: url('fontes/BebasNeue-Regular.ttf');*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+font-family: 'IDroid';
+/*font-family: var(--fonte2);*/
+color: white;
+background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+text-align: center;
+}
+
+nav {
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+}
+
+body {
+    background-color: lightgray;
+    font-family: 'IDroid', Times, serif;
+}
+
+main {
+    background-color: rgb(216, 233, 216);
+    min-width: 400px;
+    max-width: 800px;
+    margin: 5px;
+}
+
+h1 {
+   font-family: var(--fonte2);
+}
+
+h2 {
+    background-image: linear-gradient(to right, var(--cor1), var(--cor0));
+    font-family: var(--fonte1), Cursive;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+
+}

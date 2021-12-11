@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídis em HTML5</title>
+</head>
+<body>
+<h1>Imagem Dinâmica</h1>
+<p>Tenta abrir este site e vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p> 
+
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="Imagem flexível">
+</picture>
+<h1>Reprodizindo áudio</h1>
+<p>Vamos aprender a reproduzir áudios em HTML1</p>
+<audio src="midia/05 Deep Purple - Smoke On The Water.MP3" controls autoplay></audio>
+<!--Se o áudio não rodar, precisa testar nos formatos comatíveis com os browsers, MP3, WAV, OGG este útimo é opensource-->
+<audio preload="metadata" autoplay controls loop
+    <source src="midia/01 - Battery - Metalica.mp3" type="audio/mpeg">
+    <source src="midia/01 - Battery - Metalica.mp3" type="audio/ogg">
+    <source src="midia/01 - Battery - Metalica.mp3" type="audio/wav">
+    <p>Infelizmtne seu navagador não consegue reproduzir audios</p>
+></audio>
+<!--vai tentrar rodar no primeiro formato, se não rodar, vai prar o segundo e assim por diante. Arquivos WAV são muito pesados, evite.. Tag: preload auto, carrega o arquivo inteiro antes de tocar, pode comprometer em celulares, Tag Metadata, mostra o status do video antes, tag None, nçao carrega.. aguarea o usuário tocar -->
+</body>
+</html>
