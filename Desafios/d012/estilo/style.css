@@ -62,6 +62,11 @@ section {
     font-size: 3.5vw; /** aumenta a fonte proporcional a 3.5% da largura da tela, não é o ideal, o melhor seria usar o Midia Queryes, mas não foi ensinado ainda **/
 } 
 
+/** criando um paragrafo em branco nas poesias que estão em parágragos difer3entes dentro da mesma section **/
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -70,6 +75,9 @@ section.normal {
 section.imagem {
     background-color:  rgb(59, 59, 59);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.541) /** cria uma sombra interna na imagem para dar um efeito que la está rasgada no papel, afundada no papel **/;
+    background-size: cover; /** reduz o tamanho da imagem de fundo **/ 
+    background-attachment: fixed; /** fixa a imagem criando o efeito paralax **/
 }
 
 /** criando uma caixa em volta do paragrafo escuro, para que a imagem não suge a letra branca**/
@@ -78,8 +86,17 @@ section.imagem > p {
    /** width: 400px; **/
     display: inline-block; /**em vez de width fixo 400px, cria uma cx proporcional ao tamano do conteúdo**/
     padding: 5px; /**para não colar o conteúdo nas bordas**/
-    background-color: rgba(0, 0, 0, 0.151);
+    background-color: rgba(0, 0, 0, 0.479);
+    text-shadow: 1px 1px 0px black;  
+}
 
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
