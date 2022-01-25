@@ -1,2 +1,84 @@
+
 @charset "UTF-8";
 
+/**
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+**/
+
+/** resetar todos os elementos**/
+* {
+    margin: 0px;
+    padding: 0px;   
+}
+
+/** definir todos os elementos**/
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/** criando um saction geral para valer para todos os sections, e soma0se aos sactions específicos, colocando percentual da altura 10vh fica responsivo **/
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color:  rgb(59, 59, 59);
+    color: white;
+}
+
+/** criando uma caixa em volta do paragrafo escuro, para que a imagem não suge a letra branca**/
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.151);
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
