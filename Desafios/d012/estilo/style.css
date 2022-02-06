@@ -51,7 +51,7 @@ header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-/** criando um saction geral para valer para todos os sections, e soma0se aos sactions específicos, colocando percentual da altura 10vh fica responsivo **/
+/** criando uma section geral para valer para todos os sections, e soma-se aos sections específicos, colocando percentual da altura 10vh fica responsivo **/
 
 section {
     padding-top: 10vh;
